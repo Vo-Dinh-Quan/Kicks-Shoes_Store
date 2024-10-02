@@ -1,0 +1,113 @@
+@use "../abstracts";
+
+%flexItemsCenter {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    margin-top: 32px;
+    padding: 32px;
+    border-radius: 2.4rem;
+    background: #fafafa;
+
+    @include abstracts.breakpoint(md) {
+        // responsive cho tablet - mobile
+        padding: 24px;
+    }
+
+    @include abstracts.breakpoint(sm) {
+        // responsive cho tablet - mobile
+        padding: 16px;
+    }
+}
+
+.logo__img {
+    @include abstracts.breakpoint(lg) {
+        max-width: 100px;
+    }
+
+    @include abstracts.breakpoint(sm) {
+        max-width: 80px;
+    }
+}
+
+.top-bar {
+    @extend %flexItemsCenter;
+    justify-content: space-between;
+
+    &__more {
+        display: none;
+
+        @include abstracts.breakpoint(lg) {
+            // responsive cho tablet - mobile
+            display: block;
+        }
+    }
+}
+
+.navbar {
+    &__list {
+        @extend %flexItemsCenter;
+        gap: 40px;
+
+        @include abstracts.breakpoint(lg) {
+            // responsive cho tablet - mobile
+            display: none;
+        }
+    }
+
+    &__link {
+        color: #232321;
+        /* Rubik/16px */
+        font-family: Rubik;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__down {
+        margin-top: 4px;
+    }
+}
+
+.top-act {
+    &__group {
+        display: flex;
+        gap: 40px;
+        @include abstracts.breakpoint(lg) {
+            gap: 20px;
+        }
+
+        button:first-of-type {
+            @include abstracts.breakpoint(md) {
+                display: none;
+            }
+        }
+    }
+
+    &__avatar {
+        width: 3.2rem;
+        height: 3.2rem;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-shrink: 0;
+    }
+
+    &__money {
+        display: flex;
+        width: 3.2rem;
+        height: 3.2rem;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 3.2rem;
+        background: #ffa52f;
+    }
+}
