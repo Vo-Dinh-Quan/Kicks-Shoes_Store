@@ -82,6 +82,10 @@
             gap: 20px;
         }
 
+        @include abstracts.breakpoint(md) {
+            gap: 9px;
+        }
+
         button:first-of-type {
             @include abstracts.breakpoint(md) {
                 display: none;

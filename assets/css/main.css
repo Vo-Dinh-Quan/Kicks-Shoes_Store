@@ -1079,6 +1079,11 @@ select {
   }
 }
 @media (max-width: 767.98px) {
+  .top-act__group {
+    gap: 9px;
+  }
+}
+@media (max-width: 767.98px) {
   .top-act__group button:first-of-type {
     display: none;
   }
