@@ -1,0 +1,12 @@
+{
+    "name": "shoes-store-project---is207",
+    "version": "1.0.0",
+    "description": "<img src=\"Thumbnail.png\" alt=\"Project Thumbnail\" width=\"100%\"/>",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass scss:assets/css -w"
+    },
+    "author": "",
+    "license": "ISC"
+}
