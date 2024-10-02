@@ -1015,10 +1015,12 @@ select {
 @media (max-width: 767.98px) {
   .header {
     padding: 24px;
+    border-radius: 1.8rem;
   }
 }
 @media (max-width: 575.98px) {
   .header {
+    border-radius: 1.2rem;
     padding: 16px;
   }
 }

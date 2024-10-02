@@ -12,12 +12,14 @@
     background: #fafafa;
 
     @include abstracts.breakpoint(md) {
-        // responsive cho tablet - mobile
+        // responsive cho tablet
         padding: 24px;
+        border-radius: 1.8rem;
     }
 
     @include abstracts.breakpoint(sm) {
-        // responsive cho tablet - mobile
+        // responsive cho mobile
+        border-radius: 1.2rem;
         padding: 16px;
     }
 }
