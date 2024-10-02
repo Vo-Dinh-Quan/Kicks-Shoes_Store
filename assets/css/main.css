@@ -1071,21 +1071,39 @@ select {
 
 .top-act__group {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   gap: 40px;
+  margin-left: 136px;
 }
 @media (max-width: 991.98px) {
   .top-act__group {
     gap: 20px;
+    margin-left: 26px;
   }
 }
 @media (max-width: 767.98px) {
   .top-act__group {
-    gap: 9px;
+    gap: 2px;
+    margin-left: 16px;
   }
 }
 @media (max-width: 767.98px) {
   .top-act__group button:first-of-type {
     display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .top-act__group .top-atc__icon:last-of-type {
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+  }
+}
+@media (max-width: 575.98px) {
+  .top-act__group .top-act__money {
+    max-width: 2rem;
+    height: 2rem;
   }
 }
 .top-act__avatar {

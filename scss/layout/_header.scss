@@ -75,15 +75,21 @@
 }
 
 .top-act {
+
     &__group {
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
         gap: 40px;
+        margin-left: 136px;
         @include abstracts.breakpoint(lg) {
             gap: 20px;
+            margin-left: 26px;
         }
 
         @include abstracts.breakpoint(md) {
-            gap: 9px;
+            gap: 2px;
+            margin-left: 16px;
         }
 
         button:first-of-type {
@@ -91,6 +97,19 @@
                 display: none;
             }
         }
+        .top-atc__icon:last-of-type {
+            @include abstracts.breakpoint(sm) {
+                width: 16px;
+                height: 16px;
+                margin-top: 4px;
+            }
+        }
+        .top-act__money {
+            @include abstracts.breakpoint(sm) {
+                max-width: 2rem;
+                height: 2rem;
+            }
+          }
     }
 
     &__avatar {
